@@ -1,0 +1,10 @@
+c:\GitHub\twofifteen-api-asp-net-core\bin\Debug\netcoreapp2.0\twofifteen-api-asp-net-core.deps.json
+c:\GitHub\twofifteen-api-asp-net-core\bin\Debug\netcoreapp2.0\twofifteen-api-asp-net-core.runtimeconfig.json
+c:\GitHub\twofifteen-api-asp-net-core\bin\Debug\netcoreapp2.0\twofifteen-api-asp-net-core.runtimeconfig.dev.json
+c:\GitHub\twofifteen-api-asp-net-core\bin\Debug\netcoreapp2.0\twofifteen-api-asp-net-core.dll
+c:\GitHub\twofifteen-api-asp-net-core\bin\Debug\netcoreapp2.0\twofifteen-api-asp-net-core.pdb
+c:\GitHub\twofifteen-api-asp-net-core\obj\Debug\netcoreapp2.0\twofifteen-api-asp-net-core.csproj.CoreCompileInputs.cache
+c:\GitHub\twofifteen-api-asp-net-core\obj\Debug\netcoreapp2.0\twofifteen-api-asp-net-core.AssemblyInfoInputs.cache
+c:\GitHub\twofifteen-api-asp-net-core\obj\Debug\netcoreapp2.0\twofifteen-api-asp-net-core.AssemblyInfo.cs
+c:\GitHub\twofifteen-api-asp-net-core\obj\Debug\netcoreapp2.0\twofifteen-api-asp-net-core.dll
+c:\GitHub\twofifteen-api-asp-net-core\obj\Debug\netcoreapp2.0\twofifteen-api-asp-net-core.pdb
