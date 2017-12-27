@@ -1,4 +1,5 @@
 using System;
+using SJB.TwoFifteen.Enums;
 
 namespace SJB.TwoFifteen.Models
 {
@@ -13,8 +14,8 @@ namespace SJB.TwoFifteen.Models
     public String FirstName { get; set; }
     public ushort Height { get; set; }
     public ushort Weight { get; set; }
-    public char Throws { get; set; }
-    public char Bats { get; set; }
+    public Aptitude Throws { get; set; }
+    public Aptitude Bats { get; set; }
     public String Remarks { get; set; }
   }
 }
