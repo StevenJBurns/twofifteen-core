@@ -26,6 +26,8 @@ header h4 {
 main {
   background-color: #F0F0F0;
   flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
