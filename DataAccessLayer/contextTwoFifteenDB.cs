@@ -5,7 +5,7 @@ namespace SJB.TwoFifteen.DataAccessLayer
 {
   public class TwoFifteenContext : DbContext
     {
-    public TodoContext(DbContextOptions<TodoContext> options) : base(options)
+    public TwoFifteenContext(DbContextOptions<TwoFifteenContext> options) : base(options)
       {
       }
 
