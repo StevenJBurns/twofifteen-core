@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SJB.TwoFifteen.Controllers
 {
-  public class FranchiseController: Controller
+  public class FranchiseController : Controller
   {
 
 
