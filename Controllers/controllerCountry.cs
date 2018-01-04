@@ -1,13 +1,12 @@
 using System;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using SJB.TwoFifteen.DataAccessLayer;
 using SJB.TwoFifteen.Models;
 
 namespace SJB.TwoFifteen.Controllers
-  {
+{
   [Route("/[controller]")]
   public class CountryController : Controller
     {
