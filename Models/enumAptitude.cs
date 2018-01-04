@@ -3,9 +3,9 @@ using System;
 namespace SJB.TwoFifteen.Enums
 {
   public enum Aptitude {
-    left = 1,
-    right = 2,
-    both = 4
+    Left = 1,
+    Right = 2,
+    Both = 4
   }
 }
 
