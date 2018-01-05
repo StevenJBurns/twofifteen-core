@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace twofifteen_api_asp_net_core
+namespace SJB.TwoFifteen
 {
   public class Program
     {

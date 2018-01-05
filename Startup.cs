@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using SJB.TwoFifteen.DataAccessLayer;
 
-namespace twofifteen_api_asp_net_core
+namespace SJB.TwoFifteen
 {
   public class Startup
     {

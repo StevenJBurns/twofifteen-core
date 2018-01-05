@@ -17,7 +17,7 @@ namespace SJB.TwoFifteen.Controllers
       {
       _context = context;
       
-      if (_context.Countries.Count() == 0)
+      if (_context.Locations.Count() == 0)
         {
         // _context.Countries.Add(new TodoItem { Name = "Item1" });
         // _context.SaveChanges();
@@ -25,17 +25,17 @@ namespace SJB.TwoFifteen.Controllers
       }
 
     [HttpGet]
-    public IEnumerable<Country> GetAll()
-      { return _context.Countries.ToList(); }
+    public IEnumerable<Location> GetAll()
+      { return _context.Locations.ToList(); }
 
-    [HttpGet("{id}", Name = "GetCountry")]
+    [HttpGet("{id}", Name = "GetLocation")]
     public IActionResult GetById(Int16 id)
       {
-      var country = _context.Countries.FirstOrDefault(c => c.ID == id);
+      var location = _context.Locations.FirstOrDefault(l => l.ID == id);
 
-      if (country == null) return NotFound();
+      if (location == null) return NotFound();
     
-      return new ObjectResult(country);
+      return new ObjectResult(location);
       }
     }
   }
