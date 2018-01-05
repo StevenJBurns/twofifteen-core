@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using SJB.TwoFifteen.Enums;
 
 namespace SJB.TwoFifteen.Models
@@ -12,8 +13,10 @@ namespace SJB.TwoFifteen.Models
     public int LocationDeceased { get; set; } 
     public String LastName { get; set; }
     public String FirstName { get; set; }
-    public ushort Height { get; set; }
-    public ushort Weight { get; set; }
+    [Column("height", TypeName="smallint")]
+    public UInt16 Height { get; set; }
+    [Column("weight", TypeName="smallint")]
+    public UInt16 Weight { get; set; }
     public Aptitude Throws { get; set; }
     public Aptitude Bats { get; set; }
     public String Remarks { get; set; }

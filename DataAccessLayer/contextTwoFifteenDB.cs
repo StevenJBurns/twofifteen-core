@@ -13,7 +13,7 @@ namespace SJB.TwoFifteen.DataAccessLayer
     public DbSet<Venue> Venues { get; set; }
     public DbSet<Franchise> Franchises { get; set; }
     public DbSet<Team> Teams { get; set; }
-    public DbSet<Player> Players { get; set; }
+    //public DbSet<Player> Players { get; set; }
     public DbSet<Country> Countries { get; set; }
     }
 }
