@@ -29,7 +29,7 @@ namespace SJB.TwoFifteen.Controllers
       { return _context.Locations.ToList(); }
 
     [HttpGet("{id}", Name = "GetLocation")]
-    public IActionResult GetById(Int16 id)
+    public IActionResult GetById(Int32 id)
       {
       var location = _context.Locations.FirstOrDefault(l => l.ID == id);
 
