@@ -15,7 +15,7 @@ namespace SJB.TwoFifteen.Models
     public string StateShort { get; set; }
     [Column("country_long", TypeName="nvarchar()")]
     public string CountryLong { get; set; }
-    [Column("state_short", TypeName="nvarchar()")]
+    [Column("country_short", TypeName="nvarchar()")]
     public String CountryShort { get; set; }
     }
   }
