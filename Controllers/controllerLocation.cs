@@ -3,18 +3,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using SJB.TwoFifteen.DataAccessLayer;
 using SJB.TwoFifteen.Models;
 
 namespace SJB.TwoFifteen.Controllers
   {
   [Route("/[controller]")]
-  public class VenueController : Controller
+  public class LocationController : Controller
     {
     private readonly TwoFifteenContext _context;
 
-    public VenueController(TwoFifteenContext context)
+    public LocationController(TwoFifteenContext context)
       {
       _context = context;
       
@@ -26,21 +25,17 @@ namespace SJB.TwoFifteen.Controllers
       }
 
     [HttpGet]
-    public IEnumerable<Venue> GetAll()
-      {
-      var venues = _context.Venues.Include(v => v.Location).ToList();
+    public IEnumerable<Location> GetAll()
+      { return _context.Locations.ToList(); }
 
-      return venues;
-      }
-
-    [HttpGet("{id}", Name = "GetVenue")]
+    [HttpGet("{id}", Name = "GetLocation")]
     public IActionResult GetById(Int32 id)
       {
-      var venue = _context.Venues.FirstOrDefault(v => v.ID == id);
+      var location = _context.Locations.FirstOrDefault(l => l.ID == id);
 
-      if (venue == null) return NotFound();
+      if (location == null) return NotFound();
     
-      return new ObjectResult(venue);
+      return new ObjectResult(location);
       }
     }
   }
