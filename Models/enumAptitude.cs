@@ -1,6 +1,6 @@
 using System;
 
-namespace SJB.TwoFifteen.Enums
+namespace SJB.TwoFifteen.API.Enums
 {
   public enum Aptitude {
     Left = 1,

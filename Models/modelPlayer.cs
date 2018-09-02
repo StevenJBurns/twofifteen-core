@@ -1,8 +1,8 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
-using SJB.TwoFifteen.Enums;
+using SJB.TwoFifteen.API.Enums;
 
-namespace SJB.TwoFifteen.Models
+namespace SJB.TwoFifteen.API.Models
 {
   public class Player
   {

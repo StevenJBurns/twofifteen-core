@@ -1,6 +1,6 @@
 using System;
 
-namespace SJB.TwoFifteen.Models
+namespace SJB.TwoFifteen.API.Models
 {
   public class Team
   {

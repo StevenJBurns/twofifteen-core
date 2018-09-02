@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using SJB.TwoFifteen.Models;
+using SJB.TwoFifteen.API.Models;
 
-namespace SJB.TwoFifteen.DataAccessLayer
+namespace SJB.TwoFifteen.API.DataAccessLayer
   {
   public class TwoFifteenContext : DbContext
     {

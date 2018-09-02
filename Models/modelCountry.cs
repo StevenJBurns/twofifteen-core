@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SJB.TwoFifteen.Models
+namespace SJB.TwoFifteen.API.Models
 {
   public class Country
   {

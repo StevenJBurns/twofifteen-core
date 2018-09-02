@@ -3,10 +3,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using SJB.TwoFifteen.DataAccessLayer;
-using SJB.TwoFifteen.Models;
+using SJB.TwoFifteen.API.DataAccessLayer;
+using SJB.TwoFifteen.API.Models;
 
-namespace SJB.TwoFifteen.Controllers
+namespace SJB.TwoFifteen.API.Controllers
   {
   [Route("/[controller]")]
   public class LocationController : Controller

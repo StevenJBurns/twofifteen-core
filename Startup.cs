@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using SJB.TwoFifteen.DataAccessLayer;
+using SJB.TwoFifteen.API.DataAccessLayer;
 
-namespace SJB.TwoFifteen
+namespace SJB.TwoFifteen.API
 {
   public class Startup
     {

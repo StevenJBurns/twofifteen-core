@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-namespace SJB.TwoFifteen.Controllers
+namespace SJB.TwoFifteen.API.Controllers
 {
   public class FranchiseController : Controller
   {
