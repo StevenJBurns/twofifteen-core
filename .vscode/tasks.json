@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/twofifteen-api-asp-net-core.csproj"
+                "${workspaceFolder}/twofifteen-api.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
