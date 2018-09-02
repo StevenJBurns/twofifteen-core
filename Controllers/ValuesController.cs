@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace twofifteen_api_asp_net_core.Controllers
+namespace SJB.TwoFifteen.API
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
