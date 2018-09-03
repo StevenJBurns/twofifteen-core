@@ -8,4 +8,3 @@ namespace SJB.TwoFifteen.API.Enums
     Both = 4
   }
 }
-
