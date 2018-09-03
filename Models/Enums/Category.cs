@@ -2,7 +2,7 @@ using System;
 
 namespace SJB.TwoFifteen.API.Enums
 {
-  public enum Group {
+  public enum Category {
     Player = 1,
     Manager = 2,
     PlayerManager = 4,
