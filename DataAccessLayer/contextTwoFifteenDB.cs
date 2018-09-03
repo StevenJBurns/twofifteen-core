@@ -11,7 +11,6 @@ namespace SJB.TwoFifteen.API.DataAccessLayer
     public DbSet<Team> Teams { get; set; }
     //public DbSet<Player> Players { get; set; }
     //public DbSet<Achievement> Achievements { get; set; }
-    public DbSet<Country> Countries { get; set; }
 
     public TwoFifteenContext(DbContextOptions<TwoFifteenContext> options) : base(options)
       {
