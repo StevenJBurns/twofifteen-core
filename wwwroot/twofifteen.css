@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+html {
+  background-color: #D0D0D0;
+  font-family: "mlb-primary", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  padding: 48px
+}
+
+header * {
+  margin: auto;
+  text-align: center;
+  color: #F0F0F0;
+}
+
+main {
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center
+}
+
+main p {
+  width: 80%;
+  max-width: 720px;
+  margin: 8px auto;
+  text-align: justify
+}
+
+main section {
+  display: flex;
+  background-color: silver;
+  flex-direction: row;
+  justify-content: center
+}
+
+main article {
+  margin: 0 4px;
+  padding: 8px;
+  color: #D0D0D0;
+  background-color: green 
+}
+
+main ul {
+  list-style: none
+}
+
+footer {
+  padding: 40px
+}
+
+footer * {
+  margin: auto;
+  text-align: center
+}
+
+header,
+footer {
+  color: #F0F0F0;
+  background-color: darkgreen
+}
+
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 1.8em;
+  }
+}
