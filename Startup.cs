@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SJB.TwoFifteen.API.DataAccessLayer;
+using Microsoft.AspNetCore.Hosting;
 
 namespace SJB.TwoFifteen.API
 {
@@ -19,12 +19,12 @@ namespace SJB.TwoFifteen.API
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
       {
-      services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+      services.AddControllers();
       services.AddDbContext<TwoFifteenContext> (options => options.UseSqlServer(Configuration.GetConnectionString("TwoFifteenConnection")));
       }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
       {
       if (env.IsDevelopment())
         {
@@ -36,8 +36,9 @@ namespace SJB.TwoFifteen.API
           app.UseHsts();
         }
       
-      app.UseMvc();
+      app.UseRouting();
       app.UseHttpsRedirection();
+      app.UseEndpoints(endpoints => endpoints.MapControllers());
       app.UseFileServer(enableDirectoryBrowsing: false);
       }
     }
