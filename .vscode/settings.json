@@ -3,5 +3,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,
   "editor.tabSize": 2,
-  "git.enabled": true
+  "git.enabled": true,
+  "editor.codeLens": false
 }
