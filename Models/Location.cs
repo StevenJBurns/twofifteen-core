@@ -1,9 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SJB.TwoFifteen.API.Models
+namespace SJB.TwoFifteen.Models
   {
   [Table("locations")]
   public class Location

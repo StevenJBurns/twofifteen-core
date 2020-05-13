@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using SJB.TwoFifteen.Enums;
 
-namespace SJB.TwoFifteen.API.Models
+namespace SJB.TwoFifteen.Models
 {
   public class Player
   {

@@ -4,9 +4,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SJB.TwoFifteen.API.DataAccessLayer;
+using SJB.TwoFifteen.DataAccessLayer;
 
-namespace SJB.TwoFifteen.API
+namespace SJB.TwoFifteen
 {
   public class Startup
     {

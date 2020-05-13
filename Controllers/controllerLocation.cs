@@ -1,14 +1,13 @@
 using System;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using SJB.TwoFifteen.API.DataAccessLayer;
-using SJB.TwoFifteen.API.Models;
+using SJB.TwoFifteen.DataAccessLayer;
+using SJB.TwoFifteen.Models;
 
-namespace SJB.TwoFifteen.API.Controllers
+namespace SJB.TwoFifteen.Controllers
   {
-  [Route("/[controller]")]
+  [Route("/locations")]
   public class LocationController : Controller
     {
     private readonly TwoFifteenContext _context;

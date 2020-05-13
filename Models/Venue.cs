@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SJB.TwoFifteen.API.Models
+namespace SJB.TwoFifteen.Models
   {
   [Table("venues")]
   public class Venue
