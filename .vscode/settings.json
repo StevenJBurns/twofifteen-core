@@ -1,8 +1,7 @@
 {
   "window.zoomLevel": 2,
-  "files.autoSave": "afterDelay",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,
   "editor.tabSize": 2,
-  "git.enabled": true,
+  "git.enabled": true
 }
