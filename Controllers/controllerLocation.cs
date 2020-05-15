@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using SJB.TwoFifteen.DataAccessLayer;
+using SJB.TwoFifteen.Context;
 using SJB.TwoFifteen.Models;
 
 namespace SJB.TwoFifteen.Controllers

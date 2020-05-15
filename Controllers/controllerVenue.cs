@@ -3,18 +3,20 @@ using System.Linq;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SJB.TwoFifteen.DataAccessLayer;
+using SJB.TwoFifteen.Context;
 using SJB.TwoFifteen.Models;
 
 namespace SJB.TwoFifteen.Controllers
   {
-  [Route("/venues")]
-  public class VenueController : Controller
+  [ApiController]
+  [Route("[controller]")]
+  public class VenueController : ControllerBase
     {
     private readonly TwoFifteenContext _context;
 
     public VenueController(TwoFifteenContext context)
       {
+      
       _context = context;
       
       if (_context.Locations.Count() == 0)
