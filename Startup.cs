@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SJB.TwoFifteen.DataAccessLayer;
+using SJB.TwoFifteen.Context;
 
 namespace SJB.TwoFifteen
 {
@@ -32,5 +32,5 @@ namespace SJB.TwoFifteen
         app.UseEndpoints(endpoints => endpoints.MapControllers());
         app.UseFileServer(enableDirectoryBrowsing: false);
         }
-    }
-}
+    };
+};
