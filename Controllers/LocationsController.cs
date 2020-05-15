@@ -17,13 +17,13 @@ namespace SJB.TwoFifteen.Controllers
         { return Ok(_locations.GetAllLocations()); }
 
       [HttpGet("{id}")]
-      public ActionResult<Location> GetLocationById(Int32 id)
-        {
-          var location = _locations.GetLocationById(1);
+      public ActionResult<Location> GetLocationById(Int32 id) 
+      {
+        var location = _locations.GetLocationById(id);
 
         if (location == null) return NotFound();
       
-        return location;
+        return Ok(location);
       }
     }
   }

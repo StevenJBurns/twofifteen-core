@@ -23,7 +23,7 @@ namespace SJB.TwoFifteen.Controllers
     [HttpGet("{id}")]
     public ActionResult<Venue> GetVenueById(Int32 id)
       {
-      var venue = _venues.GetVenueById(0);
+      var venue = _venues.GetVenueById(id);
 
       if (venue == null) return NotFound();
     
