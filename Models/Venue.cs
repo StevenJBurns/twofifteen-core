@@ -2,10 +2,10 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SJB.TwoFifteen.Models
-  {
+{
   [Table("venues")]
   public class Venue
-    {
+  {
     [Column("id", TypeName="int")]
     public int ID { get; set; }
 
@@ -39,7 +39,7 @@ namespace SJB.TwoFifteen.Models
     [Column("is_dome_retractable", TypeName="bit")]
     public Boolean IsDomeRetractable { get; set; }
 
-    [Column("remarks", TypeName="nvarchar(MAX)")]
+    [Column("remarks", TypeName="nvarchar(1024)")]
     public String Remarks { get; set; }
-    }
-  }
+  };
+};
