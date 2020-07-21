@@ -4,7 +4,7 @@ using SJB.TwoFifteen.Models;
 namespace SJB.TwoFifteen.Context
 {
   public class TwoFifteenContext : DbContext
-    {
+  {
     public DbSet<Location> Locations { get; set; }
     public DbSet<Venue> Venues { get; set; }
     public DbSet<Franchise> Franchises { get; set; }
@@ -15,8 +15,5 @@ namespace SJB.TwoFifteen.Context
     public TwoFifteenContext(DbContextOptions<TwoFifteenContext> options) : base(options)
       {
       }
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder) => modelBuilder.Entity<Venue>()
-                  .HasOne(v => v.Location);
   }
 }
