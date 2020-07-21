@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SJB.TwoFifteen.Models
@@ -14,6 +15,8 @@ namespace SJB.TwoFifteen.Models
 
     [ForeignKey(name: "LocationID")]
     public Location Location { get; set; }
+
+    public object[] Names { get; set; }
 
     [Column("date_open", TypeName="date")]
     public DateTime? DateOpen { get; set; }
