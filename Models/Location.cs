@@ -1,13 +1,11 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SJB.TwoFifteen.API.Models
-  {
+namespace SJB.TwoFifteen.Models
+{
   [Table("locations")]
   public class Location
-    {
+  {
     [Column("id", TypeName="int")]
     public Int32 ID { get; set; }
 
@@ -24,8 +22,6 @@ namespace SJB.TwoFifteen.API.Models
     public string CountryLong { get; set; }
 
     [Column("country_short", TypeName="nvarchar()")]
-    public String CountryShort { get; set; }
-
-    //public virtual List<Venue> Venues { get; set; }
-    }
-  }
+    public string CountryShort { get; set; }
+  };
+};
