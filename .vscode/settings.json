@@ -1,5 +1,5 @@
 {
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 0,
   "files.autoSave": "afterDelay",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,
