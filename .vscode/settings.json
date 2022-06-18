@@ -1,6 +1,6 @@
 {
   "window.zoomLevel": 0,
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "off",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,
   "editor.tabSize": 2,
