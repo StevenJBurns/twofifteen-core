@@ -6,6 +6,6 @@ public sealed class Season
 {
   public int Year { get; set; }
   public int WorldSeriesChampion { get; set; }
-  public int AllStarGameWinnder { get; set; }
+  public int AllStarGameWinner { get; set; }
   public List<Game> Games { get; set; }
 }

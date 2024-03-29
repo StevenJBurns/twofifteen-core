@@ -1,36 +1,35 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
+// using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SJB.TwoFifteen.Context;
 
-namespace SJB.TwoFifteen
+namespace TwoFifteen.Application.Context;
+
+public class Startup
 {
-  public class Startup
+  public IConfiguration Configuration { get; }
+
+  public Startup(IConfiguration configuration)
+  { Configuration = configuration; }
+
+  public void ConfigureServices(IServiceCollection services)
   {
-    public IConfiguration Configuration { get; }
+    services.AddControllers();
+    // services.AddDbContext<TwoFifteenContext>(options =>
+    //   options.UseSqlServer(Configuration.GetConnectionString("TwoFifteenConnection"))
+    // );
+  }
 
-    public Startup(IConfiguration configuration)
-      { Configuration = configuration; }
+  public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+  {
+    if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
-    // This method is called by the runtime. Use this method to add services to the container.
-    public void ConfigureServices(IServiceCollection services)
-    {
-      services.AddControllers();
-      services.AddDbContext<TwoFifteenContext> (options => options.UseSqlServer(Configuration.GetConnectionString("TwoFifteenConnection")));
-    }
-
-    // This method is  called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-    {
-      if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
-
-      app.UseRouting();
-      app.UseHttpsRedirection();
-      app.UseEndpoints(endpoints => endpoints.MapControllers());
-      app.UseFileServer(enableDirectoryBrowsing: false);
-    }
-  };
-};
+    app.UseHttpsRedirection();
+    app.UseRouting();
+    app.UseEndpoints(endpoints => endpoints.MapControllers());
+    // app.MapGraphQL("/graphql");
+    app.UseFileServer(enableDirectoryBrowsing: false);
+  }
+}
